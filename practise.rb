@@ -71,10 +71,12 @@
     name: "Camelot of Pets"
   }
 
-pets = []
-for animal in @pet_shop[:pets]
-  if animal[:breed] == "British Shorthair"
-    pets << animal[:name]
+  pet = {}
+
+  for animal in @pet_shop[:pets]
+    if animal[:name] == "Arthur"
+      p animal
+      # pet.merge(animal)
+    end
   end
-end
-p pets
+  p pet
