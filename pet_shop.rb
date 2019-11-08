@@ -46,5 +46,9 @@ def remove_pet_by_name(shop, purchased_pet)
     if animal[:name] == purchased_pet
       shop[:pets].delete(animal)
     end
-  end 
+  end
+end
+
+def add_pet_to_stock(shop, new_pet)
+  shop[:pets] << new_pet
 end
